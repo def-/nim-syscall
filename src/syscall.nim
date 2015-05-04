@@ -9,3 +9,6 @@ elif defined(i386):
   export call.syscall, nr.Number
 else:
   {.error: "No syscalls defined for your platform".}
+
+when isMainModule:
+  discard syscall(WRITE, 1, cstring("Hello!\n"), 7)

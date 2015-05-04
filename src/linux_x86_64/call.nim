@@ -52,11 +52,3 @@ proc syscall*(n: Number, a1, a2, a3, a4, a5, a6: any): clong {.inline.} =
                 "d"((long)`a3`), "r"((long)`a4`), "r"((long)`a5`),
                 "r"((long)`a6)
               : "memory", "r11", "rcx", "cc");""".}
-
-#discard syscall(WRITE)
-#discard syscall(WRITE, 10)
-#discard syscall(WRITE, 10, 20)
-#discard syscall(WRITE, 1, "Hello!\n", 7)
-#discard syscall(WRITE, 10, 20, 30, 40)
-#discard syscall(WRITE, 10, 20, 30, 40, 50)
-#discard syscall(WRITE, 10, 20, 30, 40, 50, 60)
