@@ -20,4 +20,4 @@ dependencies:
 test:
   override:
     - |
-        nim c -d:release src/syscall
+        nim c -r src/syscall
