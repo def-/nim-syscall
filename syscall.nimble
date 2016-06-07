@@ -1,5 +1,5 @@
-[Package]
-name          = "syscall"
+# Package
+
 version       = "0.1"
 author        = "Dennis Felsing"
 description   = "Raw system calls for Nim"
@@ -7,5 +7,6 @@ license       = "MIT"
 
 srcDir        = "src"
 
-[Deps]
-Requires      = "nim >= 0.10.3"
+# Dependencies
+
+requires "nim >= 0.10.3"
