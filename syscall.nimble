@@ -10,3 +10,6 @@ srcDir        = "src"
 # Dependencies
 
 requires "nim >= 0.10.3"
+
+task tests, "Test syscall":
+  exec "nim c -r src/syscall"
