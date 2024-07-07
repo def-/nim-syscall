@@ -50,5 +50,5 @@ proc syscall*(n: Number, a1, a2, a3, a4, a5, a6: any): clong {.inline.} =
     "syscall" : "=a"(`result`)
               : "a"((long)`n`), "D"((long)`a1`), "S"((long)`a2`),
                 "d"((long)`a3`), "r"((long)`a4`), "r"((long)`a5`),
-                "r"((long)`a6)
+                "r"((long)`a6`)
               : "memory", "r11", "rcx", "cc");""".}
